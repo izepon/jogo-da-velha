@@ -10,7 +10,7 @@ Tela do projeto:
   <img alt="jogo-da-velha" src="https://github.com/izepon/jogo-da-velha/blob/master/img/icons/startgame.PNG" width="60%" height="20%"/>
 </p>
 
-### Link para jogar: 
+### Link para jogar: https://izepon.github.io/jogo-da-velha/
 
 #  :computer:Tecnologia utilizadas:
 
