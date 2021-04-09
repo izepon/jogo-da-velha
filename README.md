@@ -6,8 +6,8 @@ A intenção é praticar utilização do HTML, CSS e JavaScript com breve noçã
 
 Tela do projeto:
 
-<p align="center">
-  <img alt="jogo-da-velha" src="https://github.com/izepon/jogo-da-velha/blob/master/img/icons/startgame.PNG" width="100%">
+<p align="left">
+  <img alt="jogo-da-velha" src="https://github.com/izepon/jogo-da-velha/blob/master/img/icons/startgame.PNG" width="60%" height="20%"/>
 </p>
 
 ### Link para jogar: 
