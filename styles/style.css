@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 50px;
+    background-color: rgba(0, 119, 255, 0.568);
+    font-family: "Poppins";
+    text-align: center;
+    
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 550px;
+    border-radius: 10px;
+    background-color: teal;
+    border: 3px solid black;
+    
+}
+
+#h1 {
+    padding: 10px 10px;
+    font-size: 2.8rem; 
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);   
+}
+
+#subtitulo {
+    padding: 15px;
+    color:whitesmoke; 
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);   
+}
+
+
+/* Modo de jogo - Menu*/
+#versusAmigo, #versusPc, #reiniciarJogo {
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    cursor: pointer; 
+    box-shadow: 3px 3px 3px rgba(145, 145, 145, 0.555); 
+    transition: 300ms;
+}
+
+.modoJogoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#versusAmigo, #versusPc {
+    width: 200px;
+    margin: 0 10px 30px 10px;
+    padding: 5px;
+    display: flex; 
+    align-items: center;
+}
+
+#versusAmigo, #versusPc {
+    background-color: #A3CDD9;
+}
+
+#versusAmigo:hover, #versusPc:hover {
+    background-color: #bbd7df;
+}
+
+#versusAmigo:active, #versusPc:active {
+    transform: translateY(4px); 
+}
+
+.emoji {
+    font-size: 3rem;
+}
+
+.img {
+    width: 4rem;
+    border-radius: 20px;
+}
+
+.versusTexto {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);  
+    
+}
+
+/* Tabuleiro */
+
+#tabuleiro {
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    justify-content: center;
+    
+}
+
+.celula {
+    width: 140px;
+    height: 140px;
+    border-radius: 12px;
+    border: 3px solid rgb(49, 53, 70);
+    background-color: rgba(255, 255, 255, 0.596);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(145, 145, 145);
+    transition: 100ms;
+}
+
+.celula:hover {
+    background-color: whitesmoke;
+}
+
+.o::after {
+    content: "\1F6E1️";
+    font-size: 4rem;
+    line-height: 150px;
+    color: goldenrod;
+       
+}
+
+.x::after {
+    content: "\2694️";
+    font-size: 3.5rem;
+    line-height: 150px;
+    color: rgb(165, 177, 182);
+}
+
+/* Placar */
+
+.placarContainer {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.placarContainer p {
+    margin: 0 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#placarEscudo, #placarEspadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(145, 145, 145);
+}
+
+/* Resetar Jogo*/
+
+#reiniciarJogo {
+    width: 460px;
+    margin: 10px auto 0 auto;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #A3CDD9;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+#reiniciarJogo:active {
+    width: 455px;
+    transform: translateY(3px);
+}
+
+#reiniciarJogo:hover {
+    background-color: #bbd7df;
+}
+
+/* Medias Sociais - Footer*/
+
+footer {
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.icon-social{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+} 
+
+.icon-social:hover{
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        height: 100vh;
+    }
+    #versusAmigo, #versusPc {
+        width: 150px;
+        flex-direction: column;
+    }
+
+    .versusTexto {
+        font-size: 1rem;
+    }
+
+    .celula {
+        width: 100px;
+        height: 100px;
+    }
+
+    .o::after {
+        font-size: 3.5rem;
+        line-height: 100px;
+    }
+
+    .x::after {
+        font-size: 3rem;
+        line-height: 100px;
+    }
+
+    .placarContainer p {
+        margin: 0 5px;
+        font-size: 1.4rem;
+    }
+
+    #placarEscudo, #placarEspadas {
+        width: 55px;
+        height: 40px;
+    }
+
+    #reiniciarJogo {
+        width: 300px;
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+
+    #reiniciarJogo:active {
+        width: 295px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #versusAmigo, #versusPc {
+        width: 100px;
+    }
+
+    .versusTexto {
+        font-size: 0.8rem;
+    }
+
+    .celula {
+        width: 80px;
+        height: 80px;
+    }
+
+    .o::after {
+        font-size: 3rem;
+        line-height: 80px;
+    }
+
+    .x::after {
+        font-size: 2.5rem;
+        line-height: 80px;
+    }
+
+    .placarContainer h2 {
+        font-size: 1.3rem;
+    }
+
+    .placarContainer p {
+        font-size: 1.3rem;
+    }
+
+    #placarEscudo, #placarEspadas {
+        width: 45px;
+        height: 30px;
+    }
+
+    #reiniciarJogo {
+        width: 250px;
+        margin-top: 0;
+        font-size: 1.1rem;
+    }
+
+    #reiniciarJogo:active {
+        width: 245px;
+    }
+}

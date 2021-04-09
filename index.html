@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>    
+    <div class="container">
+        <h1 id="h1">Jogo da Velha</h1>
+        <h2 id="subtitulo">Modo de jogo:</h2>
+    
+        <div class="modoJogoContainer">
+            <button id="versusAmigo" onclick="versusAmigo()">
+                <!-- <div class="emoji">&#x1F465;</div> -->
+                <img class="img" src="./img/players/player vs player.PNG" alt="Versus Amigo (local)">
+                <div class="versusTexto">Versus Amigo (local)</div>
+            </button>
+    
+            <button id="versusPc" onclick="versusPc()">
+                <!-- <div class="emoji">&#x1F916;</div> -->
+                <img class="img" src="./img/players/player vs pc.PNG" alt="Versus Computers">
+                <div class="versusTexto">Versus Computers</div>
+            </button>
+        </div>
+        
+        <div id="tabuleiro">
+            <div id="0" class="celula"></div>
+            <div id="1" class="celula"></div>
+            <div id="2" class="celula"></div>
+            <div id="3" class="celula"></div>
+            <div id="4" class="celula"></div>
+            <div id="5" class="celula"></div>
+            <div id="6" class="celula"></div>
+            <div id="7" class="celula"></div>
+            <div id="8" class="celula"></div>
+        </div>
+    
+        <div class="placarContainer">
+            <h2>Placar:</h2>
+            <p id="emojiEscudoPlacar">&#x1F6E1;</p>
+            <div id="placarEscudo" class="placar">
+                <p>0</p>
+            </div>
+            <p>X</p>
+            <div id="placarEspadas" class="placar">
+                <p>0</p>
+            </div>
+            <p>&#x2694;</p>
+        </div>
+    
+        <input type="button" id="reiniciarJogo" onclick="reiniciarJogo()" value="Reiniciar Jogo">
+    
+        
+        <footer>
+            <h3>Desenvolvido por Jean Carlos Izepon</h3>
+
+            <a href="https://www.linkedin.com/in/jean-izepon/" target="_blank" itemprop="url">
+                <img class="icon-social" src="./img/icons/linkedin.png">
+            </a>
+
+            <a href="https://www.instagram.com/izepon/" target="_blank" itemprop="url">
+                <img class="icon-social" src="./img/icons/insta.png">
+            </a>
+
+            <a href="https://github.com/izepon" target="_blank" itemprop="url">
+                <img class="icon-social" src="./img/icons/git.ico">
+            </a>
+        </footer>
+
+</div>
+
+    <script src="./script/game.js"></script>
+    <script src="./script/interface.js"></script>
+    <script src="./script/jogadaAleatoriaPc.js"></script>
+</body>
+
+</html>
